@@ -1,0 +1,50 @@
+GET http://localhost:8080/cars
+
+<> 2021-02-26T003933.500.html
+
+###
+
+GET http://localhost/cars
+
+###
+
+GET http://localhost/cars
+
+###
+
+GET http://localhost:8080/cars
+
+###
+
+GET http://localhost:8080
+
+<> 2021-02-18T235908.404.html
+
+###
+
+GET https://127.0.0.1
+
+###
+
+GET https://127.0.0.1
+
+###
+
+GET http://localhost:8080
+
+<> 2021-02-18T222500.404.html
+
+###
+
+GET http://127.0.0.1
+
+###
+
+GET http://localhost
+
+###
+
+GET http://localhost
+
+###
+
