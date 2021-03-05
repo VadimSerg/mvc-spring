@@ -12,26 +12,20 @@ import java.util.List;
 public class CarService {
 
    @Autowired
-   CarController carController;
+   private CarController carController;
 
-   List<Car> cars = new ArrayList<>();
-
-
-   public  CarService() {
-       cars.add(new Car("Toyota",1800,20));
-       cars.add(new Car("BMV", 1000, 10));
-       cars.add(new Car("Mazda",4500,78));
-       cars.add(new Car("Hammer", 3000, 90));
-       cars.add(new Car("Mercedes",120, 45));
-   }
-    public List<Car> getListCars(Integer count){
+   public List<Car> getListCars(Integer count){
 
       // Integer number = ((count==null)||count>=cars.size()||count==0) ? cars.size() : count;
 //        Integer number=((count!=null) && count < cars.size())? count : cars.size();
 //        List<Car> carList = cars.subList(0, number);
 //        return carList;
-
-        List<Car> carList =((count!=null) && count < cars.size())? cars.subList(0,count) : cars;
-        return carList;
+        List<Car> cars = new ArrayList<>();
+        cars.add(new Car("Toyota",1800,20));
+        cars.add(new Car("BMV", 1000, 10));
+        cars.add(new Car("Mazda",4500,78));
+        cars.add(new Car("Hammer", 3000, 90));
+        cars.add(new Car("Mercedes",120, 45));
+        return ((count!=null) && count < cars.size())? cars.subList(0,count) : cars;
     }
 }
